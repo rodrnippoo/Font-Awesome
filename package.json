@@ -1,0 +1,60 @@
+{
+  "name": "@fortawesome/font-awesome-free",
+  "version": "6.5.2",
+  "description": "The iconic SVG, font, and CSS toolkit",
+  "homepage": "https://fontawesome.com",
+  "author": "The Font Awesome Team (https://github.com/FortAwesome)",
+  "license": "(CC-BY-4.0 AND OFL-1.1 AND MIT)",
+  "keywords": [
+    "font",
+    "awesome",
+    "fontawesome",
+    "icon",
+    "svg",
+    "bootstrap"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FortAwesome/Font-Awesome"
+  },
+  "bugs": {
+    "url": "https://github.com/FortAwesome/Font-Awesome/issues"
+  },
+  "scripts": {
+    "build": "node build/build.js",
+    "build:icons": "node build/generate-icons.js",
+    "build:scss": "node build/generate-scss.js",
+    "build:less": "node build/generate-less.js",
+    "lint": "eslint build/ --ext .js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "clean": "rimraf css/ js/ less/ scss/ webfonts/ metadata/"
+  },
+  "main": "js/all.js",
+  "style": "css/all.css",
+  "sass": "scss/fontawesome.scss",
+  "files": [
+    "css/",
+    "js/",
+    "less/",
+    "scss/",
+    "sprites/",
+    "svgs/",
+    "webfonts/",
+    "metadata/",
+    "LICENSE.txt",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.23.0",
+    "eslint": "^8.50.0",
+    "jest": "^29.7.0",
+    "rimraf": "^5.0.5",
+    "sass": "^1.69.0",
+    "svgo": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
