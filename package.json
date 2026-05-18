@@ -30,7 +30,8 @@
     "test:watch": "jest --watch",
     "clean": "rimraf css/ js/ less/ scss/ webfonts/ metadata/",
     "dev": "jest --watch --verbose",
-    "build:watch": "node build/build.js --watch"
+    "build:watch": "node build/build.js --watch",
+    "build:fresh": "npm run clean && npm run build"
   },
   "main": "js/all.js",
   "style": "css/all.css",
