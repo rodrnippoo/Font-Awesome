@@ -28,7 +28,8 @@
     "lint": "eslint build/ --ext .js",
     "test": "jest",
     "test:watch": "jest --watch",
-    "clean": "rimraf css/ js/ less/ scss/ webfonts/ metadata/"
+    "clean": "rimraf css/ js/ less/ scss/ webfonts/ metadata/",
+    "dev": "jest --watch --verbose"
   },
   "main": "js/all.js",
   "style": "css/all.css",
