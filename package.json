@@ -31,7 +31,8 @@
     "clean": "rimraf css/ js/ less/ scss/ webfonts/ metadata/",
     "dev": "jest --watch --verbose",
     "build:watch": "node build/build.js --watch",
-    "build:fresh": "npm run clean && npm run build"
+    "build:fresh": "npm run clean && npm run build",
+    "lint:fix": "eslint build/ --ext .js --fix"
   },
   "main": "js/all.js",
   "style": "css/all.css",
